@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/jquery.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/jquery.tmpl.min.js"></script>
+
+    <style>
+        body,html{
+            width: 100%;
+        }
+        main{
+            width: 60%;
+            min-width:1000px ;
+            margin: 0 auto;
+            margin-bottom: 100px;
+        }
+        tbody img{
+            width:80px ;
+            height: 53px;
+        }
+        main p{
+            text-align: right;
+            color: #888;
+        }
+        table p{
+            text-align: center;
+        }
+        table a{
+            padding: 5px;
+        }
+        table a:hover{
+            color: red;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<main>
+    <img src="" alt="">
+    <table border="1" rules="rows" cellspacing="1px" cellpadding="15px" style=" width:1000px;">
+        <thead style="height: 40px;">
+        <tr>
+            <th>订单信息</th>
+            <th>售卖金额</th>
+            <th>提交时间</th>
+            <th>上架时间</th>
+            <th>商品存储</th>
+            <th>商品状态</th>
+            <th>是否回款</th>
+            <th>操作</th>
+
+        </tr>
+
+        </thead>
+        <tbody align="center"></tbody>
+
+    </table>
+    <br>
+    <p>操作须知：审核未通过的订单请查看系统消息修改重新上传；</p>
+    <p>每个订单仅能使用一次降价申请功能，如有疑问请联系客服。</p>
+
+</main>
+
+<!--编写模板-->
+<script type="text/html" id="mysell">
+    <tr>
+        <td>
+
+            <img src="{{= message}}" alt="">
+            <p>{{= num}}</p>
+
+        </td>
+        <td>{{= cost}}</td>
+        <td>{{= referTime}}</td>
+        <td>{{= putawayTime}}</td>
+        <td>{{= save}}</td>
+        <td>{{= state}}</td>
+        <td>{{= isreturn}}</td>
+        <td>
+            <a href="javascript:;">降价申请</a>
+            <div>
+                <a href="javascript:;">删除</a>&nbsp|
+                <a href="javascript:;">取消</a>
+            </div>
+
+        </td>
+
+
+    </tr>
+</script>
+<!--渲染数据-->
+<script>
+    $.get('../datas/mysell.json',function (data) {
+        $("#mysell").tmpl(data).appendTo('tbody');
+        console.log(data);
+    })
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

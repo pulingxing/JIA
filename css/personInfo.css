@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+main{
+    font-size: 18px;
+    width:60% ;
+    min-width: 750px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+main ul{
+    margin: 30px auto;
+    font-size: 20px;
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 1px solid darkgrey;
+}
+
+main ul li{
+    padding:15px 0;
+}
+main ul li:hover{
+    border-bottom: 2px solid red;
+
+}
+main ul li:first-child{
+    border-bottom: 2px solid red;
+
+}
+
+main form select{
+    margin: 15px auto;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+/**/
+main form input{
+    border: 1px solid darkgrey;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin: 10px 5px 20px 0;
+    outline: none;
+}
+main form input:active{
+    border:1px solid green ;
+    box-shadow: 1px 1px 10px 1px green inset;
+
+}
+
+main .btn{
+    width: 300px;
+    height: 60px;
+    background-color: #838281;
+    font:normal 31px/60px "微软雅黑";
+    color: #fff;
+    text-align: center;
+    margin: 20px 80px;
+    border-radius: 8px;
+}
+main .btn:hover{
+    background: #82C353;
+}
+
+
+
+
+
+

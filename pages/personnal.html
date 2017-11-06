@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+  <link rel="shortcut icon" href="../images/favicon.ico">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/personInfo.css">
+  <link rel="stylesheet" href="../css/goodsdetails.css">
+  <link rel="stylesheet" href="../css/public.css">
+</head>
+<body>
+<header></header>
+
+  <section>
+    <main>
+    <ul>
+      <li>
+        <a href="#personInfo">个人信息</a>
+      </li>
+      <li>
+        <a href="#myOrder">我的订单</a>
+      </li>
+      <li>
+        <a href="#mySell">我的出售</a>
+      </li>
+      <li>
+        <a href="#myAccount">个人账户</a>
+      </li>
+      <li>
+        <a href="#message">系统消息</a>
+      </li>
+
+    </ul>
+    <div id="view"></div>
+    </main>
+  </section>
+<footer></footer>
+
+  <script src="../js/jquery.js"></script>
+  <script>
+      location.hash = "";
+      var $personInfoLink = $("a[href='#personInfo']");
+      $personInfoLink.one("click", function (e) {
+          e.preventDefault();
+          location.hash = "personInfo";
+      });
+
+      setTimeout(function () {
+          $personInfoLink.click();
+      },100);
+  </script>
+  <script src="../js/function.js"></script>
+  <script src="../js/personInfo.js"></script>
+  <!--<script src="js/index.js"></script>-->
+</body>
+</html>

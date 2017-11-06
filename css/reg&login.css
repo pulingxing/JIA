@@ -1,0 +1,120 @@
+@charset "utf-8";
+content{
+	margin: 30px 0;
+}
+/* 大标题 */
+h1 {
+	width: 100%;
+	text-align: center;
+	font: normal 32px/140% "微软雅黑";
+	color: #333;
+}
+
+/* 副标题和页面内的超链接样式 */
+.subhead {
+	text-align: center;
+	font: normal 18px/140% "微软雅黑";
+	color: #888;
+}
+
+.subhead a, .notReceiveEmail p a {
+	color: #4375ad;
+}
+
+.subhead a:hover, .notReceiveEmail p a:hover {
+	color: #679bd4;
+}
+
+/* 登陆框 */
+.loginBox {
+	width: 402px;
+	margin: 40px auto;
+	height: auto;	
+}
+
+p.errMesg {
+	margin: 0;
+	font-size:14px;
+	color:#f33;
+}
+
+/* 字段样式 */
+.loginBox label {
+	line-height: 200%;
+	font-size: 18px;
+}
+
+/* 文本&密码框样式 */
+.loginBox .baseStyle {
+	width: 400px;
+	height: 50px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #555;
+}
+
+/* 忘记密码 */
+.loginBox p {
+	text-align: right;
+	margin-top: 15px;
+}
+
+.loginBox p a {
+	text-decoration: underline;
+	font-size: 18px;
+	color: #333;
+}
+
+.loginBox p a:hover {
+	color: #4375ad;
+}
+.psw {
+	position: relative;
+}
+.showPsw {
+	position: absolute;
+	right: -32px;
+	top: 53px;
+	background: #615C5C;
+	cursor: pointer;
+
+}
+
+/* 提交、登录、注册、链接等按钮 */
+button.loginBtn, button.fondpwdBtn, button.modifBtn, button.regBtn, .goMyEmail a {
+	width: 400px;
+	height: 64px;
+	background-color: #82c353;
+	border: none;
+	text-align: center;
+	font: normal 32px/64px "微软雅黑";
+	color: #fff;
+	cursor: pointer;
+}
+
+button.loginBtn {
+	margin-top: 40px;
+}
+
+button.fondpwdBtn, button.modifBtn, button.regBtn {
+	margin-top: 80px;
+}
+
+.loginBtn.active, .fondpwdBtn.active, .modifBtn.active, .regBtn.active, .goMyEmail a:hover {
+	background-color: #82c353;
+	cursor: pointer;
+}
+
+.loginBtn.active:hover, .fondpwdBtn.active:hover, .modifBtn.active:hover, .regBtn.active:hover, .goMyEmail a:active {
+	background-color: #97d967;
+}
+
+
+/*错误信息提示*/
+.erroMesg {
+	height: 48px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #ff2828;
+	transition: all 0.15s linear;
+}

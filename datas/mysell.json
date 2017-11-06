@@ -1,0 +1,26 @@
+
+ [
+    {
+      "message":"../images/10.jpg",
+      "num":"111111",
+      "cost":"￥620",
+      "referTime":"2015-08-02",
+      "putawayTime":"2015-08-03",
+      "save":"户里",
+      "state":"售卖中",
+      "isreturn":"否",
+      "operate":["降价申请","删除","取消"]
+    },
+   {
+     "message":"../images/10.jpg",
+     "num":"22222",
+     "cost":"￥120",
+     "referTime":"2015-08-09",
+     "putawayTime":"2015-08-1",
+     "save":"自留",
+     "state":"已售出",
+     "isreturn":"是",
+     "operate":["降价申请","删除","取消"]
+   }
+
+  ]

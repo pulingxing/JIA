@@ -1,0 +1,39 @@
+{
+    "goodsInfo":[
+      {
+        "name":"沙发",
+        "typex":"三人座",
+        "old":"9成新",
+        "sales":"680",
+        "pri":"580",
+        "originpri":"2880元",
+        "rank":"6.8",
+        "storage":"5"
+      }
+    ],
+    "goodsStyle":[
+      {
+        "sizex":"1260*760*560mm",
+        "texturex":"实木/布艺",
+        "colorx":" 亚麻色"
+
+      }
+    ],
+    "goodsImgSrc":[
+      "images/detail_1.jpg",
+      "images/detail_2.jpg",
+      "images/detail_3.jpg",
+      "images/detail_4.jpg",
+      "images/detail_5.jpg",
+      "images/detail1.jpg",
+      "images/detail2.jpg",
+      "images/detail3.jpg",
+      "images/detail4.jpg",
+      "images/detail5.jpg",
+      "images/sofa_banner.jpg",
+      "images/example_0.jpg",
+      "images/example_0.jpg",
+      "images/example_0.jpg"
+    ]
+
+}

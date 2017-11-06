@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/jQuery.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/jquery.tmpl.min.js"></script>
+    <style>
+        body,html{
+            width: 100%;
+        }
+        main{
+            width: 60%;
+            min-width:1000px ;
+            margin: 0 auto;
+            margin-bottom: 100px;
+        }
+        tbody img{
+            width:80px ;
+            height: 53px;
+        }
+        table p{
+            text-align: center;
+        }
+        table a{
+            padding: 5px;
+            margin: 5px auto;
+        }
+        table a:hover{
+            color: red;
+        }
+        table tr div{
+            width: 130px;
+            border-top: 1px solid darkgray;
+            margin-top:10px;
+        }
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+<main>
+    <img src="" alt="">
+    <table border="1" rules="rows" cellspacing="1px" cellpadding="15px" style=" width:1000px;">
+        <thead style="height: 40px;">
+        <tr>
+            <th>订单信息</th>
+            <th>金额</th>
+            <th>下单时间</th>
+            <th>送货时间</th>
+            <th>状态</th>
+            <th>操作</th>
+
+        </tr>
+
+        </thead>
+        <tbody align="center"></tbody>
+
+    </table>
+
+</main>
+
+<!--编写模板-->
+<script type="text/html" id="myorder">
+    <tr>
+        <td>
+            <img src="{{= message}}" alt="">
+            <p>{{= num}}</p>
+
+        </td>
+        <td>{{= cost}}</td>
+        <td>{{= orderTime}}</td>
+        <td>{{= sendTime}}</td>
+        <td>{{= state}}</td>
+        <td>
+            <a href="javascript:;">查看</a>&nbsp|
+            <a href="javascript:;">取消</a>
+
+            <div>
+                <a href="javascript:;">售后</a>&nbsp|
+                <a href="javascript:;">删除</a>
+            </div>
+
+        </td>
+
+
+    </tr>
+</script>
+<!--渲染数据-->
+<script>
+    $.get('../datas/myorder.json',function (data) {
+        $("#myorder").tmpl(data).appendTo('tbody');
+        console.log(data);
+    })
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

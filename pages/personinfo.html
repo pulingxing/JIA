@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/personInfo.css">
+
+</head>
+
+</header>
+<section>
+
+    <form>
+        <div>
+            <p>联系人</p>
+            <input type="text" placeholder="姓名" style="width:130px;"></input>
+            <input type="text" placeholder="电话号码" style="width:250px;"></input>
+        </div>
+        <div>
+        <p>性别</p>
+        <input type="radio" name="sex" checked><label for="">男</label>&nbsp&nbsp&nbsp;
+        <input type="radio" name="sex"><label for="">女</label>
+        </div>
+        <div>
+            <p>生日</p>
+            <div id="date">
+                <select name="year" id="year">
+                    <option value="">选择年份</option>
+                </select>
+                <select name="month" id="month">
+                    <option value="">选择月份</option>
+                </select>
+                <select id="days" class="day">
+                    <option value="">选择日期</option>
+                </select>
+            </div>
+        </div>
+        <div>
+           <p>家居偏好</p>
+            <select name="" id="">
+                <option value="1" >现代简约</option>
+                <option value="2">恬淡田园</option>
+                <option value="3">现代中式</option>
+                <option value="4">东南亚风</option>
+                <option value="5">欧式经典</option>
+                <option value="6">地中海</option>
+                <option value="7">其它</option>
+
+            </select>
+        </div>
+        <div>
+            <p>教育程度</p>
+            <select name="" id="">
+                <option value="1" >初中</option>
+                <option value="2">高中</option>
+                <option value="3">大专</option>
+                <option value="4">本科</option>
+                <option value="5">硕士</option>
+                <option value="6">博士</option>
+                <option value="7">其它</option>
+
+            </select>
+        </div>
+        <div>
+            <p>所在行业</p>
+            <select name="" id="">
+                <option value="1" >机构组织</option>
+                <option value="2">农林牧渔</option>
+                <option value="3">医药卫生</option>
+                <option value="4">建筑建材</option>
+                <option value="5">冶金矿产</option>
+                <option value="6">石油化工</option>
+                <option value="7">其它</option>
+
+            </select>
+        </div>
+        <div id="site">
+            <p>所在地区</p>
+            <select id="province">
+                <option>四川</option>
+            </select>
+            <select id="city">
+                <option value="none" >--</option>
+            </select>
+            <select id="region">
+                <option value="none" >--</option>
+            </select>
+            <select id="street">
+                <option value="none" >--</option>
+            </select>
+            <input type="text" placeholder="街道门牌号" style="width: 500px;">
+        </div>
+
+        <div class="btn">提交</div>
+    </form>
+
+</section>
+<script src="../js/jQuery.js"></script>
+<script src="../js/function.js"></script>
+<script src="../js/personInfo.js"></script>
+
+</body>
+</html>
